@@ -9,7 +9,7 @@ BOLD = "\033[1m"
 
 while True:
     text = input(f'{BLUE}paw {RESET}{BOLD}>{RESET} ')
-    result, error = paw.run(text)
+    result, error = paw.run('<stdin>', text)
 
     if error: print(f'{RED}{error.as_string()}{RESET}')
     else: print(result)
