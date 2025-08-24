@@ -11,5 +11,5 @@ while True:
     text = input(f'{BLUE}paw {RESET}{BOLD}>{RESET} ')
     result, error = paw.run('<stdin>', text)
 
-    if error: print(f'{RED}{error.as_string()}{RESET}')
+    if error: print(f'\n{RED}{error.as_string()}{RESET}')
     else: print(result)
